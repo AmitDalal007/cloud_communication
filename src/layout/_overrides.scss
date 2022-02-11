@@ -1,0 +1,400 @@
+//Suggested location to add your overrides so that migration would be easy by just updating the SASS folder in the future
+
+.p-progressbar{
+    height: 0.5rem !important;
+}
+
+.table-header {
+    font-size: 1.25rem !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+/* toggle button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 22px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #73879C;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #73879C;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .customer-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+
+    &.status-qualified {
+        background: #C8E6C9;
+        color: #256029;
+    }
+
+    &.status-unqualified {
+        background: #FFCDD2;
+        color: #C63737;
+    }
+
+    &.status-negotiation {
+        background: #FEEDAF;
+        color: #8A5340;
+    }
+
+    &.status-new {
+        background: #B3E5FC;
+        color: #23547B;
+    }
+
+    &.status-renewal {
+        background: #ECCFFF;
+        color: #694382;
+    }
+
+    &.status-proposal {
+        background: #FFD8B2;
+        color: #805B36;
+    }
+}
+
+._dashbtn{
+  color: #ffffff;
+  background: #32b5eb;
+  border: #32b5eb !important;
+}
+._dashbtn:hover{
+  color: #ffffff;
+  background: #10a8e9 !important;
+}
+
+.p-datatable-header{
+  color: #73879C !important;
+}
+
+// Login Form
+.layout-main-container2 {
+  color: #73879C;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  /* padding: 7rem 2rem 2rem 4rem; */
+  transition: margin-left 0.2s;
+}
+
+
+// For Step form
+#grad1 {
+  background-color: #eff3f8;
+  // background-color: #9C27B0;
+  // background-image: linear-gradient(120deg, #FF4081, #81D4FA)
+}
+// #email{
+//   background-color: white !important;
+// }
+// #msform {
+//   text-align: center;
+//   position: relative;
+//   margin-top: 20px
+// }
+
+#msform fieldset .form-card {
+  background: white;
+  border: 0 none;
+  border-radius: 0px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 20px 40px 30px 40px;
+  box-sizing: border-box;
+  width: 94%;
+  margin: 0 3% 20px 3%;
+  position: relative
+}
+
+#msform fieldset .card {
+  background: white;
+  // border: none;
+  border-radius: 10px;
+  // box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 20px 40px 30px 40px;
+  box-sizing: border-box;
+  width: 94%;
+  margin: 0 3% 20px 3%;
+  // position: relative;
+  align-items: initial;
+  text-align: initial;
+}
+
+._signimg{
+  width: 200px;
+  margin: auto !important;
+  margin-bottom: 0 !important;
+  margin-top: 60px !important;
+}
+
+// #msform fieldset {
+//   background: white;
+//   border: 0 none;
+//   border-radius: 0.5rem;
+//   box-sizing: border-box;
+//   width: 100%;
+//   margin: 0;
+//   padding-bottom: 20px;
+//   position: relative
+// }
+
+#msform fieldset:not(:first-of-type) {
+  display: none
+}
+
+#msform fieldset .form-card {
+  text-align: left;
+  color: #9E9E9E
+}
+
+#msform input,
+#msform textarea {
+  // padding: 0px 8px 4px 8px;
+  // border: none;
+  // border-bottom: 1px solid #ccc;
+  // border-radius: 0px;
+  // margin-bottom: 25px;
+  // margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  // font-family: montserrat;
+  color: #2C3E50;
+  // font-size: 16px;
+  // letter-spacing: 1px
+}
+
+._sfnbtn{
+  background: #32b5eb !important;
+  outline: #32b5eb !important;
+  border-color: #32b5eb !important;
+}
+
+// #msform input:focus,
+// #msform textarea:focus {
+  // -moz-box-shadow: none !important;
+  // -webkit-box-shadow: none !important;
+  // box-shadow: none !important;
+  // border: none;
+  // font-weight: bold;
+  // border-bottom: 2px solid rgb(200, 201, 201);
+  // outline-width: 0
+// }
+
+// #msform .action-button {
+//   width: 100px;
+//   background: skyblue;
+//   font-weight: bold;
+//   color: white;
+//   border: 0 none;
+//   border-radius: 0px;
+//   cursor: pointer;
+//   padding: 10px 5px;
+//   margin: 10px 5px
+// }
+
+// #msform .action-button:hover,
+// #msform .action-button:focus {
+//   box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue
+// }
+
+// #msform .action-button-previous {
+//   width: 100px;
+//   background: #616161;
+//   font-weight: bold;
+//   color: white;
+//   border: 0 none;
+//   border-radius: 0px;
+//   cursor: pointer;
+//   padding: 10px 5px;
+//   margin: 10px 5px
+// }
+
+// #msform .action-button-previous:hover,
+// #msform .action-button-previous:focus {
+//   box-shadow: 0 0 0 2px white, 0 0 0 3px #616161
+// }
+
+select.list-dt {
+  border: none;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 2px 5px 3px 5px;
+  margin: 2px
+}
+
+select.list-dt:focus {
+  border-bottom: 2px solid skyblue
+}
+
+.card1 {
+  z-index: 0;
+  // border: none;
+  margin-top: 20px !important;
+  margin-bottom: 80px !important;
+  border-radius: 0.5rem;
+  position: relative
+}
+
+// .fs-title {
+//   font-size: 25px;
+//   color: #2C3E50;
+//   margin-bottom: 10px;
+//   font-weight: bold;
+//   text-align: left
+// }
+
+#progressbar {
+  width: 100% !important;
+  // right: 0 !important;
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey
+}
+
+#progressbar .active {
+  color: #000000
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 12px;
+  width: 32%;
+  float: left;
+  position: relative
+}
+
+#progressbar #account:before {
+  font-family: FontAwesome;
+  content: "\f023"
+}
+
+#progressbar #personal:before {
+  font-family: FontAwesome;
+  content: "\f007"
+}
+
+#progressbar #payment:before {
+  font-family: FontAwesome;
+  content: "\f09d"
+}
+
+#progressbar #confirm:before {
+  font-family: FontAwesome;
+  content: "\f00c"
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px
+}
+
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: skyblue
+}
+
+.radio-group {
+  position: relative;
+  margin-bottom: 25px
+}
+
+.radio {
+  display: inline-block;
+  width: 204;
+  height: 104;
+  border-radius: 0;
+  background: lightblue;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 8px 2px
+}
+
+.radio:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3)
+}
+
+.radio.selected {
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1)
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover
+}
